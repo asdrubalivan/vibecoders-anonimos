@@ -4,10 +4,10 @@ import Footer from "@/components/Footer";
 const reuniones = [
   {
     dia: "Lunes",
-    hora: "19:00",
+    hora: "19:00 ARG/VEN",
     tipo: "Presencial",
     nombre: "Grupo Cursor Anónimo",
-    lugar: "Sala Turing — Cibercafé El Compilador, Calle Mayor 42",
+    lugar: "Sala Turing — Café El Compilador, Av. Corrientes 1337, Buenos Aires",
     descripcion:
       "Para usuarios de Cursor que han perdido la capacidad de escribir código sin sugerencias inline. Nivel: principiante avanzado.",
     aforo: "12 personas",
@@ -16,36 +16,36 @@ const reuniones = [
   },
   {
     dia: "Martes",
-    hora: "20:30",
+    hora: "20:30 ARG/VEN",
     tipo: "Virtual",
     nombre: "ChatGPT Dependientes",
     lugar: "Zoom — ID: 420-69-1337 (contraseña en Discord)",
     descripcion:
-      "Reunión para los que han tenido conversaciones de más de 50 mensajes con GPT intentando que su código funcione. Traed capturas.",
+      "Reunión para los que han tenido conversaciones de más de 50 mensajes con GPT intentando que su código funcione. Traigan capturas.",
     aforo: "Sin límite",
     nivel: "todos",
     emoji: "💬",
   },
   {
     dia: "Miércoles",
-    hora: "18:00",
+    hora: "18:00 ARG/VEN",
     tipo: "Taller",
     nombre: "Escribe una función tú solo",
-    lugar: "Centro Cívico Digital, Sala Ada Lovelace",
+    lugar: "Centro Cultural Digital, Sala Ada Lovelace — Caracas",
     descripcion:
-      "Taller práctico. Escribiremos funciones simples sin IA, debuggearemos sin pedir ayuda, y leeremos mensajes de error con nuestros propios ojos.",
+      "Taller práctico. Vamos a escribir funciones simples sin IA, debuggear sin pedir ayuda, y leer mensajes de error con nuestros propios ojos.",
     aforo: "8 personas",
     nivel: "avanzado",
     emoji: "✍️",
   },
   {
     dia: "Jueves",
-    hora: "20:00",
+    hora: "20:00 ARG/VEN",
     tipo: "Virtual",
     nombre: "Reunión General Semanal",
     lugar: "Discord — Canal #reuniones-jueves",
     descripcion:
-      "La reunión principal de Vibecoders Anónimos. Compartimos historias de la semana, celebramos sobriedad y acogemos a nuevos miembros. Obligatorio presentarse.",
+      "La reunión principal de Vibecoders Anónimos. Compartimos historias de la semana, celebramos sobriedad y recibimos a nuevos miembros. Presentarse es obligatorio.",
     aforo: "Sin límite",
     nivel: "todos",
     emoji: "🏛️",
@@ -53,24 +53,24 @@ const reuniones = [
   },
   {
     dia: "Viernes",
-    hora: "17:30",
+    hora: "17:30 ARG/VEN",
     tipo: "Taller",
     nombre: "Git sin miedo",
     lugar: "Virtual — Google Meet",
     descripcion:
-      "Para los que llevan 6 meses con un solo branch llamado 'main' y nunca han hecho un rebase. Aprenderemos git de verdad, no los comandos que nos da la IA.",
+      "Para los que llevan 6 meses con un solo branch llamado 'main' y nunca han hecho un rebase. Vamos a aprender git de verdad, no los comandos que nos da la IA.",
     aforo: "10 personas",
     nivel: "principiante",
     emoji: "🌿",
   },
   {
     dia: "Sábado",
-    hora: "11:00",
+    hora: "11:00 ARG/VEN",
     tipo: "Especial",
     nombre: "Retiro de Desconexión Digital",
-    lugar: "Parque del Retiro — Bajo el árbol más cercano al lago",
+    lugar: "Parque Centenario — Bajo el árbol más cercano a la laguna, Buenos Aires",
     descripcion:
-      "Un sábado al mes: nada de IA, nada de IDE, nada de código. Solo papel, lápiz, y ejercicios de lógica. Para los casos más graves.",
+      "Un sábado al mes: nada de IA, nada de IDE, nada de código. Solo papel, lápiz y ejercicios de lógica. Para los casos más graves.",
     aforo: "15 personas",
     nivel: "crisis",
     emoji: "🌳",
@@ -103,8 +103,8 @@ export default function Reuniones() {
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Reuniones</h1>
         <p className="text-base opacity-80 max-w-xl mx-auto">
           La recuperación no se hace sola. Cada semana, cientos de vibecoders
-          se reúnen para compartir, aprender, y recordar que el código lo escriben
-          las personas.
+          se juntan para compartir, aprender y recordar que el código lo escriben
+          las personas. Todos los horarios en hora Argentina / Venezuela.
         </p>
       </header>
 
@@ -118,7 +118,7 @@ export default function Reuniones() {
               <p className="font-bold text-[#4a3728] text-sm">Normas de las reuniones</p>
               <p className="text-sm text-[#4a3728] mt-1 leading-relaxed">
                 Lo que se dice en las reuniones, se queda en las reuniones. No se juzga a nadie por su stack tecnológico.
-                Prohibido abrir el móvil para pedirle a la IA que complete tus frases durante la reunión.
+                Prohibido abrir el celular para pedirle a la IA que complete sus frases durante la reunión.
               </p>
             </div>
           </div>
@@ -174,8 +174,8 @@ export default function Reuniones() {
             </h3>
             <p className="text-sm text-[#6b5a4e] mb-5">
               Si tienes un grupo de al menos 3 vibecoders dispuestos a recuperarse,
-              podemos certificar vuestras reuniones como grupo oficial de Vibecoders Anónimos.
-              Solo necesitáis: un local, café, y ganas de leer documentación.
+              podemos certificar sus reuniones como grupo oficial de Vibecoders Anónimos.
+              Solo necesitan: un local, café y ganas de leer documentación.
             </p>
             <button className="bg-[#8b1a1a] text-[#f5f0e8] font-bold px-6 py-3 rounded hover:bg-[#6b1414] transition-colors text-sm uppercase tracking-wide">
               Solicitar certificación de grupo

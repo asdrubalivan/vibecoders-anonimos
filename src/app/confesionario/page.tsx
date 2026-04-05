@@ -21,7 +21,7 @@ const confesionesEjemplo = [
   },
   {
     pecado: "Le pregunté a Claude qué hacía una línea de código de mi propio proyecto. Me dijo que él no la había escrito. Tenía razón, la había escrito Copilot.",
-    penitencia: "Escribir a mano (papel y boli) las 20 líneas más importantes de tu proyecto.",
+    penitencia: "Escribir a mano (papel y lapicero) las 20 líneas más importantes de tu proyecto.",
     gravedad: "mortal",
     absuelto: false,
     tiempo: "hace 3 días",
