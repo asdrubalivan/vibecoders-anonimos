@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f0e8;
+  --foreground: #1a1a1a;
+  --primary: #8b1a1a;
+  --secondary: #4a3728;
+  --accent: #d4a017;
+  --muted: #6b5a4e;
+  --card: #faf6ee;
+  --border: #c9b99a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --font-sans: var(--font-serif);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.flicker { animation: flicker 3s ease-in-out infinite; }
+.fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+.pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+
+.torn-edge {
+  position: relative;
+}
+.torn-edge::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: var(--background);
+  clip-path: polygon(0% 100%, 2% 20%, 4% 80%, 6% 10%, 8% 70%, 10% 30%, 12% 90%, 14% 20%, 16% 60%, 18% 10%, 20% 80%, 22% 30%, 24% 70%, 26% 20%, 28% 90%, 30% 40%, 32% 80%, 34% 10%, 36% 60%, 38% 30%, 40% 85%, 42% 15%, 44% 75%, 46% 35%, 48% 90%, 50% 25%, 52% 70%, 54% 20%, 56% 80%, 58% 30%, 60% 65%, 62% 15%, 64% 75%, 66% 40%, 68% 85%, 70% 20%, 72% 60%, 74% 10%, 76% 70%, 78% 35%, 80% 80%, 82% 25%, 84% 65%, 86% 15%, 88% 75%, 90% 30%, 92% 70%, 94% 20%, 96% 60%, 98% 40%, 100% 100%);
+}
+
+.paper-texture {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.stamp {
+  display: inline-block;
+  border: 4px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 16px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transform: rotate(-8deg);
+  opacity: 0.85;
+}
+
+.underline-handwritten {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--accent);
+}
